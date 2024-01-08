@@ -1,0 +1,52 @@
+body{
+    background-image:url(pilis_1/bg.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+header{
+    background-image: url(pilis_1/logo1.jpg);
+    padding: 60px;
+    text-align: center;
+    color: white;
+    grid-area: h;
+    font-size: 80px;
+}
+nav{
+    background-image: url(pilis_1/img02.gif);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #96A96F;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'h h h'
+    'as ar ar'
+    'f f f';
+    background-color: white;
+    width: 900px;
+    margin: auto;
+}
+
+footer{
+    grid-area: f;
+}
+
+article {
+    grid-area: ar;
+    padding-right: 100px ;
+}
+article>div>p{
+    text-align: justify;
+}
+article>div>p>img{
+    float: left;
+    padding: 10px;
+}
+aside {
+    grid-area: as;
+}
